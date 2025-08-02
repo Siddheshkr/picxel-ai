@@ -6,18 +6,18 @@ import { useAuth } from "@clerk/nextjs";
 import { useState } from "react";
 import { Button } from "../ui/button";
 
-// // Extend the Window interface to include Clerk
-// declare global {
-//   interface Window {
-//     Clerk?: {
-//       __internal_openCheckout: (options: {
-//         planId: string;
-//         planPeriod: "month" | "year";
-//         subscriberType: string;
-//       }) => Promise<void>;
-//     };
-//   }
-// }
+// Extend the Window interface to include Clerk
+declare global {
+  interface Window {
+    Clerk?: {
+      __internal_openCheckout: (options: {
+        planId: string;
+        planPeriod: "month" | "year";
+        subscriberType: string;
+      }) => Promise<void>;
+    };
+  }
+}
 
 type PricingCardProps = {
   id: string;
