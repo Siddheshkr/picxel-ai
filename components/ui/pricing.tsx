@@ -9,7 +9,13 @@ import { Button } from "../ui/button";
 // Extend the Window interface to include Clerk
 declare global {
   interface Window {
-    Clerk?: any;
+    Clerk?: {
+      __internal_openCheckout: (options: {
+        planId: string;
+        planPeriod: "month" | "year";
+        subscriberType: string;
+      }) => Promise<void>;
+    };
   }
 }
 
