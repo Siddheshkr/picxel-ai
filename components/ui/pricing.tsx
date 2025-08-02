@@ -6,6 +6,13 @@ import { useAuth } from "@clerk/nextjs";
 import { useState } from "react";
 import { Button } from "../ui/button";
 
+// Extend the Window interface to include Clerk
+declare global {
+  interface Window {
+    Clerk?: any;
+  }
+}
+
 type PricingCardProps = {
   id: string;
   plan: string;
