@@ -22,6 +22,14 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "hooks/use-convex-query.js",
+    "convex/projects.js",
+    "app/(main)/dashboard/page.jsx"
+, "app/(main)/dashboard/_components/new-project-modal.jsx"  ],
   "exclude": ["node_modules"]
 }
