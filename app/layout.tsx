@@ -14,6 +14,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Picxel-AI",
   description: "AI Image Editor",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({

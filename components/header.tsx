@@ -23,11 +23,11 @@ const Header = () => {
       <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-full px-8 py-3 flex items-center justify-between gap-8">
         <Link href="/" className="mr-10 md:mr-20 cursor-pointer">
           <Image
-            src="/picxel.png"
+            src="/logo.png"
             alt="Logo"
-            className="min-w-24 object-cover"
-            width={96}
-            height={24}
+            className="min-w-28 object-cover"
+            width={100}
+            height={96}
           />
         </Link>
         {path === "/" && (
