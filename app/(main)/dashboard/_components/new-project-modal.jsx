@@ -129,7 +129,7 @@ export function NewProjectModal({ isOpen, onClose }) {
   return (
     <>
       <Dialog open={isOpen} onOpenChange={handleClose}>
-        <DialogContent className="max-w-2xl bg-slate-800 border-white/10">
+        <DialogContent className="max-w-2xl bg-zinc-900 border-white/10">
           <DialogHeader>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -141,7 +141,7 @@ export function NewProjectModal({ isOpen, onClose }) {
                     variant="secondary"
                     className="bg-slate-700 text-white/70"
                   >
-                    {currentProjectCount}/3 projects
+                    {currentProjectCount}/5 projects
                   </Badge>
                 )}
               </div>
@@ -150,7 +150,7 @@ export function NewProjectModal({ isOpen, onClose }) {
 
           <div className="space-y-6">
             {/* Project Limit Warning for Free Users */}
-            {isFree && currentProjectCount >= 2 && (
+            {isFree && currentProjectCount >= 4 && (
               <Alert className="bg-amber-500/10 border-amber-500/20">
                 <Crown className="h-5 w-5 text-amber-400" />
                 <AlertDescription className="text-amber-300/80">
