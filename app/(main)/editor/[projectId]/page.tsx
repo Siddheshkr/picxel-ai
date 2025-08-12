@@ -108,7 +108,7 @@ export default function EditorPage() {
 
             {/* Canvas Area */}
             <div className="flex-1 bg-slate-800">
-              <CanvasEditor project={project} activeTool={activeTool} />
+              <CanvasEditor project={project} />
             </div>
           </div>
         </div>
