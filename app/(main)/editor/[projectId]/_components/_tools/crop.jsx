@@ -387,13 +387,13 @@ export function CropContent() {
         <p className="text-xs text-white/70">
           <strong>How to crop:</strong>
           <br />
-          1. Click "Start Cropping"
+          1. Click &quot;Start Cropping&quot;
           <br />
           2. Drag the blue rectangle to select crop area
           <br />
           3. Choose aspect ratio (optional)
           <br />
-          4. Click "Apply Crop" to finalize
+          4. Click &quot;Apply Crop&quot; to finalize
         </p>
       </div>
     </div>

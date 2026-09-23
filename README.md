@@ -1,24 +1,66 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Runtime
 
-First, run the development server:
+This project targets Node.js 24 LTS and npm 10 or newer:
 
 ```bash
+nvm install
+nvm use
+```
+
+The exact recommended Node.js version is stored in `.nvmrc`.
+
+## Getting Started
+
+First, install dependencies and run the development server:
+
+```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 App Router
+- React 19
+- Tailwind CSS 4
+- Clerk authentication and billing
+- Convex database and backend functions
+- Fabric.js canvas editor
+- ImageKit image hosting and transformations
+- Unsplash background image search
+
+## Available Scripts
+
+```bash
+npm run dev      # Start the development server
+npm run build    # Create a production build
+npm run start    # Start the production server
+npm run lint     # Run ESLint
+```
+
+## Main Routes
+
+- `/` — public landing page
+- `/dashboard` — authenticated project dashboard
+- `/editor/[projectId]` — image editor
+- `/sign-in` — Clerk sign-in
+- `/sign-up` — Clerk sign-up
+- `/api/imagekit/upload` — authenticated image upload endpoint
+
+## Environment Variables
+
+Create a local `.env.local` file with the credentials for:
+
+- Clerk
+- Convex
+- ImageKit
+- Unsplash (`NEXT_PUBLIC_UNSPLASH_ACCESS_KEY`, optional)
+
+Never commit `.env.local` or any secret-bearing credentials.
 
 ## Learn More
 

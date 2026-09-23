@@ -35,8 +35,7 @@ export function ResizeControls({ project }) {
     if (!isLoading && data) {
       window.location.reload();
     }
-  }),
-    [data, isLoading];
+  }, [data, isLoading]);
 
   // Calculate dimensions for aspect ratio based on original canvas size
   const calculateAspectRatioDimensions = (ratio) => {
