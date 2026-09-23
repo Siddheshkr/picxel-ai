@@ -173,4 +173,42 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    scrollbar-color: rgb(34 211 238 / 0.38) rgb(8 10 16 / 0.9);
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(8 10 16 / 0.9);
+    border-left: 1px solid rgb(255 255 255 / 0.06);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      rgb(34 211 238 / 0.65) 0%,
+      rgb(99 102 241 / 0.65) 55%,
+      rgb(236 72 153 / 0.55) 100%
+    );
+    border: 3px solid rgb(8 10 16);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      rgb(34 211 238 / 0.9) 0%,
+      rgb(129 140 248 / 0.85) 55%,
+      rgb(236 72 153 / 0.75) 100%
+    );
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: rgb(34 211 238 / 0.9);
+  }
 }
