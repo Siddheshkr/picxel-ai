@@ -1,6 +1,7 @@
 import FeaturesSection from "@/components/ui/features";
 import HerosSection from "@/components/ui/hero";
 import PricingSection from "@/components/ui/pricing";
+import { Footer } from "@/components/ui/footer";
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
       <HerosSection />
       {/* Stats ====>>> */}
       {/* Features ====> */}
-      <FeaturesSection/>
+      <FeaturesSection />
       {/* Pricing ====> */}
-      <PricingSection/>
+      <PricingSection />
+      <Footer />
     </div>
   );
 }
